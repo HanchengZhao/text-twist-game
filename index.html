@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">	
+		<title>Twist-word-game</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- GoogleFonts -->
+  		<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	
+	<body>	
+		
+		<div id="menu">
+			<h1 class = "char">Rearrange the letters to make as many words as you can!</h1><br>
+			<button id="start" class = 'button' >Start the Game!</button>
+			<span class = "char" id ="name">Created by Hancheng Zhao</span>
+		</div>
+		<div id="game">
+			<span class = "char">Use the keyboard to input words</span><br/><br/><br/>
+			<span class = "char">Available Letters:</span><br/>
+		    <div id="avletters" class = "char" ></div><br/>
+			<span class = "char">Answers Left: <span id='ansleft'></span></span><br/>
+		    <span class = "char">Current Answer: <span id="answer"></span></span><br/>
+		    
+		    <span class = "char">Words Answered:</span><br/>
+		    <div id="words" class = "char"></div><br/>
+			
+			<button id="twist" class = 'button'>Twist</button>
+		    <button id="enter" class = 'button'>Enter</button>
+		    <button id="clear" class = 'button'>Clear</button><br/>
+			<button type="button" onclick="loadDoc()" class = 'button'>Get Letters</button><br/>
+			<p class = "char">Time: <span id="time"></span></p><br/>
+		</div>
+		
+		
+		
+		<script src ="main.js"></script>
+	</body>
+</html>
